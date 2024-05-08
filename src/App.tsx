@@ -30,7 +30,7 @@ function App() {
     <Authenticator>
       {({ signOut, user }) => (
         <main>
-          <h1>{user?.signInDetails?.loginId}'s read books</h1>
+          <h1>Books that {user?.signInDetails?.loginId} has read</h1>
           <button onClick={createTodo}>+ new</button>
           <ul>
             {todos.map((todo) => (
